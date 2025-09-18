@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="160" viewBox="0 0 640 160" role="img" aria-labelledby="title desc">
+  <title id="title">Omniweb Logo</title>
+  <desc id="desc">Gradient wordmark logo reading Omniweb with a circular O-mark composed of connected nodes.</desc>
+  <defs>
+    <linearGradient id="omniwebGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6C5CE7"/>
+      <stop offset="50%" stop-color="#7F77FF"/>
+      <stop offset="100%" stop-color="#00D2FF"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Icon mark (left of text) -->
+  <g transform="translate(24,24)" filter="url(#softShadow)">
+    <circle cx="56" cy="56" r="48" fill="none" stroke="url(#omniwebGrad)" stroke-width="8"/>
+    <!-- orbit lines -->
+    <ellipse cx="56" cy="56" rx="42" ry="18" fill="none" stroke="url(#omniwebGrad)" stroke-width="4" opacity="0.6"/>
+    <ellipse cx="56" cy="56" rx="18" ry="42" fill="none" stroke="url(#omniwebGrad)" stroke-width="4" opacity="0.6"/>
+    <!-- nodes -->
+    <circle cx="14" cy="56" r="6" fill="url(#omniwebGrad)"/>
+    <circle cx="98" cy="56" r="6" fill="url(#omniwebGrad)"/>
+    <circle cx="56" cy="14" r="6" fill="url(#omniwebGrad)"/>
+    <circle cx="56" cy="98" r="6" fill="url(#omniwebGrad)"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(144,104)">
+    <text x="0" y="0"
+          font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, sans-serif"
+          font-size="72"
+          font-weight="700"
+          letter-spacing="0.5"
+          fill="url(#omniwebGrad)">
+      Omni<tspan font-weight="800">web</tspan>
+    </text>
+    <!-- small underline accent under 'web' -->
+    <rect x="250" y="10" width="138" height="6" rx="3" fill="url(#omniwebGrad)" opacity="0.35"/>
+  </g>
+</svg>
